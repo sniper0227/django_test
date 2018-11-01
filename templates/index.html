@@ -87,12 +87,12 @@
     </a>
 </div>
 
+站点：{{ info_dict.site }} 内容：{{ info_dict.content }}
+   站点2：{{ info_dict.site}}
 
-
-
-
-
-
+{% for key, value in info_dict.items %}
+    {{ key }}: {{ value }}
+{% endfor %}
 
 
 </nav>
